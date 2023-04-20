@@ -1,23 +1,19 @@
 @import "mixin.scss";
 @import "variables.scss";
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+@import "style";
 
 header {
     position: relative;
     height: 100vh;
     background-image: $gradient;
     @include flexing;
+    margin-bottom: 3vw;
 
     p {
-        transform: scale(2);
+        transform: scale(3);
         position: absolute;
-        top: 2%;
-        left: 2%;
+        top: 30px;
+        left: 30px;
     }
 
     article {
@@ -26,12 +22,10 @@ header {
 
         div {
             display: flex;
-            height: 35vh;
-            width: 55vw;
             position: relative;
 
             h1 {
-                font-size: 10rem;
+                font-size: 10vw;
                 color: $main-color;
                 align-self: flex-end;
             }
@@ -39,21 +33,20 @@ header {
             h3 {
                 color: $main-color;
                 background-color: $fourth-color;
-                font-size: 5rem;
-                padding: 1.2rem 2rem;
+                font-size: 5vw;
+                padding: 1.2vw 2vw;
                 border-radius: 50%;
                 position: absolute;
-                right: 0;
-                top: 0;
+                right: -4vw;
+                top: -5vw;
             }
         }
 
         h2 {
-            font-size: 5rem;
+            font-size: 5vw;
             color: $main-color;
         }
     }
-
 
     .social {
         position: absolute;
@@ -63,12 +56,47 @@ header {
         gap: 3rem;
 
         i {
-            font-size: 1.5rem;
+            font-size: 40px;
         }
     }
 }
 
 main {
-    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3vw;
+    margin-bottom: $margin-bottom;
+    
+    img {
+        @include img-tag;
+    }
+    
+    article {
+        @include flexing;
+        flex-direction: column;
 
+
+        h1 {
+            @include h1-tag;
+        }
+
+        p {
+            @include p-tag;
+        }
+
+        button {
+            @include button;
+        }
+    }
+}
+
+footer {
+    background-image: $gradient;
+    @include flexing;
+    color: white;
+    font-size: $p-size;
+
+    p {
+        padding: 1vw 0;
+    }
 }

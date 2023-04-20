@@ -3,3 +3,36 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin flexing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin img-tag {
+    width: 45vw;
+    margin-bottom: $margin-bottom;
+
+}
+
+@mixin h1-tag {
+    font-size: 3vw;
+    width: $width-tags;
+    margin-bottom: $margin-bottom;
+}
+
+@mixin p-tag {
+    font-size: $p-size;
+    width: $width-tags;
+    margin-bottom: $margin-bottom;
+}
+
+@mixin button {
+    font-size: $p-size;
+    padding: 1vw 15vw;
+    color: white;
+    background-color: $second-color;
+    border: none;
+    margin-bottom: $margin-bottom;
+}

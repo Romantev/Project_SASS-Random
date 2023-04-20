@@ -4,6 +4,19 @@
   box-sizing: border-box;
 }
 
+.super-wrapper {
+  min-width: 300px;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
 header {
   position: relative;
   height: 100vh;
@@ -11,12 +24,13 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 3vw;
 }
 header p {
-  transform: scale(2);
+  transform: scale(3);
   position: absolute;
-  top: 2%;
-  left: 2%;
+  top: 30px;
+  left: 30px;
 }
 header article {
   display: flex;
@@ -26,27 +40,25 @@ header article {
 }
 header article div {
   display: flex;
-  height: 35vh;
-  width: 55vw;
   position: relative;
 }
 header article div h1 {
-  font-size: 10rem;
+  font-size: 10vw;
   color: white;
   align-self: flex-end;
 }
 header article div h3 {
   color: white;
   background-color: #bb4dfa;
-  font-size: 5rem;
-  padding: 1.2rem 2rem;
+  font-size: 5vw;
+  padding: 1.2vw 2vw;
   border-radius: 50%;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: -4vw;
+  top: -5vw;
 }
 header article h2 {
-  font-size: 5rem;
+  font-size: 5vw;
   color: white;
 }
 header .social {
@@ -59,11 +71,54 @@ header .social {
   gap: 3rem;
 }
 header .social i {
-  font-size: 1.5rem;
+  font-size: 40px;
 }
 
 main {
-  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3vw;
+  margin-bottom: 3vw;
+}
+main img {
+  width: 45vw;
+  margin-bottom: 3vw;
+}
+main article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main article h1 {
+  font-size: 3vw;
+  width: 35vw;
+  margin-bottom: 3vw;
+}
+main article p {
+  font-size: 1.5vw;
+  width: 35vw;
+  margin-bottom: 3vw;
+}
+main article button {
+  font-size: 1.5vw;
+  padding: 1vw 15vw;
+  color: white;
+  background-color: #fcc735;
+  border: none;
+  margin-bottom: 3vw;
+}
+
+footer {
+  background-image: linear-gradient(45deg, #5af2fd 12.5%, #fcc735 12.5%, #fcc735 25%, #fd5f5f 25%, #fd5f5f 37.5%, #bb4dfa 37.5%, #bb4dfa 50%, #5af2fd 50%, #5af2fd 62.5%, #fcc735 62.5%, #fcc735 75%, #fd5f5f 75%, #fd5f5f 87.5%, #bb4dfa 87.5%, #bb4dfa 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5vw;
+}
+footer p {
+  padding: 1vw 0;
 }
 
 /*# sourceMappingURL=style.css.map */
