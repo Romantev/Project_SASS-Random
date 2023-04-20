@@ -1,0 +1,74 @@
+@import "mixin.scss";
+@import "variables.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    background-image: $gradient;
+    @include flexing;
+
+    p {
+        transform: scale(2);
+        position: absolute;
+        top: 2%;
+        left: 2%;
+    }
+
+    article {
+        @include flexing;
+        flex-direction: column;
+
+        div {
+            display: flex;
+            height: 35vh;
+            width: 55vw;
+            position: relative;
+
+            h1 {
+                font-size: 10rem;
+                color: $main-color;
+                align-self: flex-end;
+            }
+
+            h3 {
+                color: $main-color;
+                background-color: $fourth-color;
+                font-size: 5rem;
+                padding: 1.2rem 2rem;
+                border-radius: 50%;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+        }
+
+        h2 {
+            font-size: 5rem;
+            color: $main-color;
+        }
+    }
+
+
+    .social {
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+        @include flexing;
+        gap: 3rem;
+
+        i {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+main {
+    height: 100vh;
+
+}
